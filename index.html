@@ -7,16 +7,18 @@
     <title>AI Recipe Generator</title>
 </head>
 <body>
+    <div class="container">
     <header>
         <h1>AI Recipe Generator</h1>
         
     </header>
     <main>
         <form>
-            <input type="text" id="ingredients" name="ingredients" placeholder="Enter ingredients (comma-separated)" required>
-            <input type="submit" />
+            <input type="text" id="ingredients" name="ingredients" placeholder="Enter ingredients (comma-separated)" required
+            class="instructions">
+            <input type="submit" class="submission"/>
         </form>
-        <div>
+        <div class="recipe">
         The recipe will go here
         <br>
         the recipe will go here
@@ -27,6 +29,7 @@
       and is open-sourced on  <a href="https://github.com/zandilemaleka/Recipe-generator" target="_blank">Github</a>
       and is hosted on <a href="https://generating-recipes.netlify.app/" target="_blank">netlify</a>.
    </footer>
+   </div>
 </body>
 <script src="src/java.js"></script>
 </html>
