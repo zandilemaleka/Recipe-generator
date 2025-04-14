@@ -1,5 +1,4 @@
 function displayRecipe(response) {
-    console.log("reciped generated");
 new Typewriter("#recipe", {
   strings: response.data.answer,
   autoStart: true,
@@ -23,8 +22,6 @@ let recipeElement = document.querySelector("#recipe");
 recipeElement.classList.remove("hidden");
 recipeElement.innerHTML = ` <div class= "blink">⏳Generating the recipe for ${InstructionInput.value}...</div>`;
 
-console.log(`Pormpt ${prompt}`);
-console.log(`Context ${context}`);
 axios.get(apiUrl).then(displayRecipe);
 }
  // Clear previous recipe
